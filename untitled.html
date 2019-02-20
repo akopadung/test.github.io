@@ -5,6 +5,7 @@
  </head>
  <body>
    <a-scene embedded arjs>
+    <a-marker-camera preset='hiro'></a-marker-camera>
     <a-text value="Hello, World!"></a-text>
     <!-- define your gltf asset <a-gltf-model src="mega_scene/scene.gltf"></a-gltf-model> -->
     <a-assets>
@@ -12,7 +13,6 @@
     </a-assets>
     <!-- use your gltf model -->
     <a-entity gltf-model="##tree"></a-entity>
-    <a-marker-camera preset='hiro'></a-marker-camera>
    </a-scene>
  </body>
 </html>
