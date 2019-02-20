@@ -6,12 +6,8 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene stats embedded arjs='trackingMethod: best;'>
-    <a-assets>
-      <a-asset-item id="smiley" src="mega_scene/scene.gltf"></a-asset-item>
-    </a-assets>
   	<a-marker preset="hiro">
-      <a-entity gltf-model="#smiley" rotation= "180 0 0">
-      </a-entity>
+      <a-gltf-model src="mega_scene/scene.gltf"></a-gltf-model>
   	</a-marker>
   	<a-entity camera></a-entity>
     </a-scene>
