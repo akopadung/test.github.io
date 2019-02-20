@@ -3,7 +3,8 @@
    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
  </head>
  <body>
-   <a-scene>
+   <a-scene embedded arjs>
+    <a-marker-camera preset='hiro'></a-marker-camera>
      <a-gltf-model src="mega_scene/scene.gltf"></a-gltf-model>
    </a-scene>
  </body>
